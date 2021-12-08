@@ -7,9 +7,8 @@
     {
         class Program
         {
-
-            const string ServiceBusConnectionString = "Endpoint=sb://<examplenamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-            const string QueueName = "salesmessages";
+        const string ServiceBusConnectionString = "Endpoint=sb://mdservicebus0.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Jl3NLB/+sG6X6COxoKY79hRM6FC6pMptHwXTiB9uQeI=";
+            const string QueueName = "servicebusqueue-mdsb0";
 
             static void Main(string[] args)
             {

@@ -3,15 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzServiceBusCommWorkflow", "AzServiceBusCommWorkflow\AzServiceBusCommWorkflow.csproj", "{00F5D8FE-BD58-4E14-B2AB-375E14B86583}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "performancemessagereceiver", "implement-message-workflows-with-service-bus\src\start\performancemessagereceiver\performancemessagereceiver.csproj", "{3080A256-9ADE-4306-AE7B-411F3BC70BDA}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "performancemessagesender", "implement-message-workflows-with-service-bus\src\start\performancemessagesender\performancemessagesender.csproj", "{61E392E4-5D08-4477-A71A-E392BE503613}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "privatemessagereceiver", "implement-message-workflows-with-service-bus\src\start\privatemessagereceiver\privatemessagereceiver.csproj", "{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "privatemessagesender", "implement-message-workflows-with-service-bus\src\start\privatemessagesender\privatemessagesender.csproj", "{4F377DCE-C309-4234-AEC5-7406FF844380}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzServiceBusCommWorkflow", "AzServiceBusCommWorkflow\AzServiceBusCommWorkflow.csproj", "{00F5D8FE-BD58-4E14-B2AB-375E14B86583}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Final", "Final", "{65DBB0D7-2C33-430B-9C45-D62EF52B9CF1}"
 EndProject
@@ -33,22 +25,6 @@ Global
 		{00F5D8FE-BD58-4E14-B2AB-375E14B86583}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00F5D8FE-BD58-4E14-B2AB-375E14B86583}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00F5D8FE-BD58-4E14-B2AB-375E14B86583}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3080A256-9ADE-4306-AE7B-411F3BC70BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3080A256-9ADE-4306-AE7B-411F3BC70BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3080A256-9ADE-4306-AE7B-411F3BC70BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3080A256-9ADE-4306-AE7B-411F3BC70BDA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61E392E4-5D08-4477-A71A-E392BE503613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61E392E4-5D08-4477-A71A-E392BE503613}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61E392E4-5D08-4477-A71A-E392BE503613}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61E392E4-5D08-4477-A71A-E392BE503613}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4F377DCE-C309-4234-AEC5-7406FF844380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F377DCE-C309-4234-AEC5-7406FF844380}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F377DCE-C309-4234-AEC5-7406FF844380}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F377DCE-C309-4234-AEC5-7406FF844380}.Release|Any CPU.Build.0 = Release|Any CPU
 		{58DE0C18-77A8-40E7-A048-440A0C4BE1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58DE0C18-77A8-40E7-A048-440A0C4BE1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58DE0C18-77A8-40E7-A048-440A0C4BE1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
