@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Azure.Messaging.ServiceBus;
@@ -25,9 +26,56 @@ namespace privatemessagesender
             try
             {
                 string messageBody = $"$10,000 order for bicycle parts from retailer Adventure Works.";
-                var message = new ServiceBusMessage(messageBody);
+                IList<ServiceBusMessage> messages = new List<ServiceBusMessage>();
+                messages.Add(new ServiceBusMessage("First"));
+                messages.Add(new ServiceBusMessage("Second"));
+                //var message = new ServiceBusMessage(messageBody);
                 Console.WriteLine($"Sending message: {messageBody}");
-                await sender.SendMessageAsync(message);
+                //await sender.SendMessageAsync(message);
+                await sender.SendMessagesAsync(messages);//batch can also add trybatch
+                /*
+                 // add the messages that we plan to send to a local queue
+Queue<ServiceBusMessage> messages = new Queue<ServiceBusMessage>();
+messages.Enqueue(new ServiceBusMessage("First message"));
+messages.Enqueue(new ServiceBusMessage("Second message"));
+messages.Enqueue(new ServiceBusMessage("Third message"));
+
+// create a message batch that we can send
+// total number of messages to be sent to the Service Bus queue
+int messageCount = messages.Count;
+
+// while all messages are not sent to the Service Bus queue
+while (messages.Count > 0)
+{
+    // start a new batch
+    using ServiceBusMessageBatch messageBatch = await sender.CreateMessageBatchAsync();
+
+    // add the first message to the batch
+    if (messageBatch.TryAddMessage(messages.Peek()))
+    {
+        // dequeue the message from the .NET queue once the message is added to the batch
+        messages.Dequeue();
+    }
+    else
+    {
+        // if the first message can't fit, then it is too large for the batch
+        throw new Exception($"Message {messageCount - messages.Count} is too large and cannot be sent.");
+    }
+
+    // add as many messages as possible to the current batch
+    while (messages.Count > 0 && messageBatch.TryAddMessage(messages.Peek()))
+    {
+        // dequeue the message from the .NET queue as it has been added to the batch
+        messages.Dequeue();
+    }
+
+    // now, send the batch
+    await sender.SendMessagesAsync(messageBatch);
+
+    // if there are any remaining messages in the .NET queue, the while loop repeats
+}
+                 */
+
             }
             catch (Exception exception)
             {

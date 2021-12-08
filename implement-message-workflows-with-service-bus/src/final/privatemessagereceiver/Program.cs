@@ -9,15 +9,16 @@
         {
         const string ServiceBusConnectionString = "Endpoint=sb://mdservicebus0.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Jl3NLB/+sG6X6COxoKY79hRM6FC6pMptHwXTiB9uQeI=";
             const string QueueName = "servicebusqueue-mdsb0";
+        public static string Mess = "";
 
-            static void Main(string[] args)
+        static void Main(string[] args)
             {
 
                 ReceiveSalesMessageAsync().GetAwaiter().GetResult();
 
-            }
+        }
 
-            static async Task ReceiveSalesMessageAsync()
+        static async Task ReceiveSalesMessageAsync()
             {
 
                 Console.WriteLine("======================================================");
@@ -40,21 +41,23 @@
 
 
                 await processor.StartProcessingAsync();
+            Console.Read();
 
-                Console.Read();
 
-                await processor.CloseAsync();
+            await processor.CloseAsync();
+                //Console.WriteLine($"Received: {Mess}");
 
-            }
+        }
 
-            // handle received messages
-            static async Task MessageHandler(ProcessMessageEventArgs args)
+        // handle received messages
+        static async Task MessageHandler(ProcessMessageEventArgs args)
             {
                 string body = args.Message.Body.ToString();
                 Console.WriteLine($"Received: {body}");
 
                 // complete the message. messages is deleted from the queue. 
                 await args.CompleteMessageAsync(args.Message);
+                Mess=body;
             }
 
             // handle any errors when receiving messages
