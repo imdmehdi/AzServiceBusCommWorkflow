@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzServiceBusCommWorkflow", "AzServiceBusCommWorkflow\AzServiceBusCommWorkflow.csproj", "{00F5D8FE-BD58-4E14-B2AB-375E14B86583}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "performancemessagereceiver", "implement-message-workflows-with-service-bus\src\start\performancemessagereceiver\performancemessagereceiver.csproj", "{3080A256-9ADE-4306-AE7B-411F3BC70BDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "performancemessagesender", "implement-message-workflows-with-service-bus\src\start\performancemessagesender\performancemessagesender.csproj", "{61E392E4-5D08-4477-A71A-E392BE503613}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "privatemessagereceiver", "implement-message-workflows-with-service-bus\src\start\privatemessagereceiver\privatemessagereceiver.csproj", "{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "privatemessagesender", "implement-message-workflows-with-service-bus\src\start\privatemessagesender\privatemessagesender.csproj", "{4F377DCE-C309-4234-AEC5-7406FF844380}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Final", "Final", "{65DBB0D7-2C33-430B-9C45-D62EF52B9CF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "performancemessagereceiver", "implement-message-workflows-with-service-bus\src\final\performancemessagereceiver\performancemessagereceiver.csproj", "{58DE0C18-77A8-40E7-A048-440A0C4BE1EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "performancemessagesender", "implement-message-workflows-with-service-bus\src\final\performancemessagesender\performancemessagesender.csproj", "{E0FE56A1-1FAC-49BC-9FFD-49053C72FC08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "privatemessagereceiver", "implement-message-workflows-with-service-bus\src\final\privatemessagereceiver\privatemessagereceiver.csproj", "{FC3AD4EF-69B0-4E41-B78B-CF97B27FE0BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "privatemessagesender", "implement-message-workflows-with-service-bus\src\final\privatemessagesender\privatemessagesender.csproj", "{1C9A899B-EE7B-43DA-B507-A7250D226EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00F5D8FE-BD58-4E14-B2AB-375E14B86583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00F5D8FE-BD58-4E14-B2AB-375E14B86583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00F5D8FE-BD58-4E14-B2AB-375E14B86583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00F5D8FE-BD58-4E14-B2AB-375E14B86583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3080A256-9ADE-4306-AE7B-411F3BC70BDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3080A256-9ADE-4306-AE7B-411F3BC70BDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3080A256-9ADE-4306-AE7B-411F3BC70BDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3080A256-9ADE-4306-AE7B-411F3BC70BDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E392E4-5D08-4477-A71A-E392BE503613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E392E4-5D08-4477-A71A-E392BE503613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E392E4-5D08-4477-A71A-E392BE503613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E392E4-5D08-4477-A71A-E392BE503613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AD3EDF-5E78-4C19-B5A3-F463A6F10824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F377DCE-C309-4234-AEC5-7406FF844380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F377DCE-C309-4234-AEC5-7406FF844380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F377DCE-C309-4234-AEC5-7406FF844380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F377DCE-C309-4234-AEC5-7406FF844380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DE0C18-77A8-40E7-A048-440A0C4BE1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DE0C18-77A8-40E7-A048-440A0C4BE1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DE0C18-77A8-40E7-A048-440A0C4BE1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DE0C18-77A8-40E7-A048-440A0C4BE1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0FE56A1-1FAC-49BC-9FFD-49053C72FC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0FE56A1-1FAC-49BC-9FFD-49053C72FC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0FE56A1-1FAC-49BC-9FFD-49053C72FC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0FE56A1-1FAC-49BC-9FFD-49053C72FC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3AD4EF-69B0-4E41-B78B-CF97B27FE0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3AD4EF-69B0-4E41-B78B-CF97B27FE0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3AD4EF-69B0-4E41-B78B-CF97B27FE0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3AD4EF-69B0-4E41-B78B-CF97B27FE0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C9A899B-EE7B-43DA-B507-A7250D226EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C9A899B-EE7B-43DA-B507-A7250D226EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C9A899B-EE7B-43DA-B507-A7250D226EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C9A899B-EE7B-43DA-B507-A7250D226EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58DE0C18-77A8-40E7-A048-440A0C4BE1EA} = {65DBB0D7-2C33-430B-9C45-D62EF52B9CF1}
+		{E0FE56A1-1FAC-49BC-9FFD-49053C72FC08} = {65DBB0D7-2C33-430B-9C45-D62EF52B9CF1}
+		{FC3AD4EF-69B0-4E41-B78B-CF97B27FE0BC} = {65DBB0D7-2C33-430B-9C45-D62EF52B9CF1}
+		{1C9A899B-EE7B-43DA-B507-A7250D226EBA} = {65DBB0D7-2C33-430B-9C45-D62EF52B9CF1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A776EE8F-3C5F-43B1-8874-EB3F5EE10E4C}
+	EndGlobalSection
+EndGlobal
